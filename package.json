@@ -1,0 +1,19 @@
+{
+  "name": "tastelens-api-v0",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TasteLens API V0 mock backend and static demo server.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test:deepseek-vision": "node test-deepseek-vision.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
