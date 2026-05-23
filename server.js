@@ -384,6 +384,11 @@ app.listen(PORT, "0.0.0.0", () => {
   console.log(`TasteLens API V0 listening on http://127.0.0.1:${PORT}`);
   console.log("Render bind host: 0.0.0.0");
   console.log(`TasteLens provider: ${MODEL_PROVIDER}`);
+  console.log(`Raw MODEL_PROVIDER: ${process.env.MODEL_PROVIDER}`);
+  console.log(`ARK_API_KEY exists: ${Boolean(process.env.ARK_API_KEY)}`);
+  console.log(`ARK_MODEL exists: ${Boolean(process.env.ARK_MODEL)}`);
+  console.log(`PORT env: ${process.env.PORT}`);
+  console.log(`cwd: ${process.cwd()}`);
   if (MODEL_PROVIDER === "doubao") {
     logArkApiKeyDiagnostics();
     if (!ARK_MODEL) console.error("Missing ARK_MODEL");
